@@ -193,7 +193,7 @@ class Student :
             messagebox.showerror("Error","All fields  are required",parent=self.root)
         else:
             try:
-                conn=mysql.connector.connect(host="localhost",username="root",password="Vish68842506!",database="face_recognition")
+                conn=mysql.connector.connect(host="localhost",username="root",password="Vk",database="face_recognition")
                 my_cursor=conn.cursor()
                 my_cursor.execute("Insert into student values(%s,%s,%s,%s,%s)",(     
                                                                                 self.var_dept.get(),
